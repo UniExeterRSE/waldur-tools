@@ -1,0 +1,4 @@
+# Paths (regex) excluded from the trufflehog workflow.
+# tests/test_config.py: URL-parsing tests use fake credentials on the reserved .test domain;
+# verification fails on DNS, so trufflehog reports them as "unknown" and fails the job.
+^tests/test_config\.py$
